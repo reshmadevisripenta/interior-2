@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JR INTERIORS | Luxury Interior Design Studio</title>
+<meta name="description" content="Aurum Interiors — Premier luxury interior design studio crafting bespoke living spaces, architectural visualizations, and refined home transformations.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <svg class="loader-logo" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Cormorant Garamond" font-size="28" fill="url(#g1)" font-weight="700">JRIND</text>
+      <defs>
+        <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#c9a84c"/>
+          <stop offset="100%" stop-color="#f0d080"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="JRIND Logo" class="nav-logo-img">
+      <span class="nav-brand-name">JR Interior Design</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+
+    <a href="contact.html" class="nav-cta">Enquiry</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu-overlay" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></button>
+  <a href="index.html" class="nav-link active">Home</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="services.html" class="nav-link">Services</a>
+  <a href="gallery.html" class="nav-link">Gallery</a>
+  <a href="projects.html" class="nav-link">Projects</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=90')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=90')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&q=90')"></div>
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    
+    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="500">
+      Where<br><em>Luxury</em><br>Meets Design
+    </h1>
+    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="700">
+      Crafting bespoke interior spaces that transcend the ordinary<br>and define a new standard of living.
+    </p>
+    <div class="hero-actions" data-aos="fade-up" data-aos-delay="900">
+      <a href="projects.html" class="btn-gold">Explore Projects</a>
+      <a href="about.html" class="btn-outline">Our Story <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+
+  <div class="hero-dots">
+    <button class="dot active" onclick="setSlide(0)"></button>
+    <button class="dot" onclick="setSlide(1)"></button>
+    <button class="dot" onclick="setSlide(2)"></button>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-num"><span class="counter" data-target="500">0</span>+</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-num"><span class="counter" data-target="320">0</span>+</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-num"><span class="counter" data-target="18">0</span></div>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+        <div class="stat-num"><span class="counter" data-target="62">0</span>+</div>
+        <div class="stat-label">Industry Awards</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Intro Section -->
+<section class="intro-section">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-left" data-aos="fade-right">
+        <div class="label-gold">WHO WE ARE</div>
+        <h2 class="section-heading">We Design <em>Spaces</em> That Tell Stories</h2>
+        <p>At JR Interiors, we believe that exceptional design is the intersection of art, architecture, and personal expression. Every project we undertake is a unique journey — from the first sketch to the final reveal.</p>
+        <p>Our team of 25+ award-winning designers brings decades of combined experience, transforming ordinary spaces into extraordinary sanctuaries.</p>
+        <a href="about.html" class="btn-gold mt-3">Learn More About Us</a>
+      </div>
+      <div class="intro-right" data-aos="fade-left">
+        <div class="intro-img-grid">
+          <img src="https://images.unsplash.com/photo-1616137466211-f939a420be84?w=800&q=90" alt="Luxury living room" class="intro-img-1">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=90" alt="Modern kitchen design" class="intro-img-2">
+          <div class="intro-badge-box">
+            <span class="big-num">18</span>
+            <span class="small-txt">Years of<br>Excellence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Preview -->
+<section class="services-preview">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="label-gold">WHAT WE DO</div>
+      <h2 class="section-heading">Our <em>Signature</em> Services</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card-v2" data-aos="fade-up" data-aos-delay="100">
+        <div class="sc-icon"><i class="fas fa-couch"></i></div>
+        <h3>Interior Design</h3>
+        <p>Full-service residential and commercial interior design crafted around your lifestyle and aesthetic preferences.</p>
+        <a href="services.html" class="sc-link">Discover <i class="fas fa-arrow-right"></i></a>
+        <div class="sc-number">01</div>
+      </div>
+      <div class="service-card-v2" data-aos="fade-up" data-aos-delay="200">
+        <div class="sc-icon"><i class="fas fa-paint-brush"></i></div>
+        <h3>Luxury Painting</h3>
+        <p>Bespoke wall artistry, decorative finishes, and custom murals that breathe life into every surface.</p>
+        <a href="services.html" class="sc-link">Discover <i class="fas fa-arrow-right"></i></a>
+        <div class="sc-number">02</div>
+      </div>
+      <div class="service-card-v2" data-aos="fade-up" data-aos-delay="300">
+        <div class="sc-icon"><i class="fas fa-cube"></i></div>
+        <h3>3D Visualization</h3>
+        <p>Photorealistic renders and virtual walkthroughs that bring your vision to life before a single nail is hammered.</p>
+        <a href="services.html" class="sc-link">Discover <i class="fas fa-arrow-right"></i></a>
+        <div class="sc-number">03</div>
+      </div>
+      <div class="service-card-v2" data-aos="fade-up" data-aos-delay="400">
+        <div class="sc-icon"><i class="fas fa-drafting-compass"></i></div>
+        <h3>Architecture</h3>
+        <p>End-to-end architectural design and space planning that merges functionality with stunning visual appeal.</p>
+        <a href="services.html" class="sc-link">Discover <i class="fas fa-arrow-right"></i></a>
+        <div class="sc-number">04</div>
+      </div>
+      <div class="service-card-v2" data-aos="fade-up" data-aos-delay="500">
+        <div class="sc-icon"><i class="fas fa-lightbulb"></i></div>
+        <h3>Lighting Design</h3>
+        <p>Curated lighting solutions that set the perfect mood, enhance architecture, and highlight key design elements.</p>
+        <a href="services.html" class="sc-link">Discover <i class="fas fa-arrow-right"></i></a>
+        <div class="sc-number">05</div>
+      </div>
+      <div class="service-card-v2" data-aos="fade-up" data-aos-delay="600">
+        <div class="sc-icon"><i class="fas fa-gem"></i></div>
+        <h3>Luxury Furnishing</h3>
+        <p>Curated selection of bespoke furniture and high-end furnishings sourced from top global manufacturers.</p>
+        <a href="services.html" class="sc-link">Discover <i class="fas fa-arrow-right"></i></a>
+        <div class="sc-number">06</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Project Banner -->
+<section class="project-banner">
+  <div class="pb-image" style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=90')"></div>
+  <div class="pb-overlay"></div>
+  <div class="pb-content" data-aos="fade-up">
+    <div class="label-gold">FEATURED PROJECT</div>
+    <h2>The Elara Penthouse</h2>
+    <p>Mumbai · 4,800 sq ft · Completed 2025</p>
+    <a href="projects.html" class="btn-gold">View Project</a>
+  </div>
+</section>
+
+<!-- Process Section -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="label-gold">HOW WE WORK</div>
+      <h2 class="section-heading">Our <em>Design</em> Process</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+        <div class="ps-num">01</div>
+        <div class="ps-icon"><i class="fas fa-comments"></i></div>
+        <h4>Consultation</h4>
+        <p>We listen deeply to understand your vision, lifestyle, and aspirations for the space.</p>
+      </div>
+      <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+      <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+        <div class="ps-num">02</div>
+        <div class="ps-icon"><i class="fas fa-pencil-ruler"></i></div>
+        <h4>Concept Design</h4>
+        <p>Our designers craft mood boards, layouts and 3D concepts tailored to your unique taste.</p>
+      </div>
+      <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+      <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+        <div class="ps-num">03</div>
+        <div class="ps-icon"><i class="fas fa-cogs"></i></div>
+        <h4>Execution</h4>
+        <p>Our skilled craftsmen bring the approved design to life with precision and artistry.</p>
+      </div>
+      <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+      <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+        <div class="ps-num">04</div>
+        <div class="ps-icon"><i class="fas fa-star"></i></div>
+        <h4>Handover</h4>
+        <p>Your transformed space is revealed — beyond expectations and ready to be lived in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="label-gold">TESTIMONIALS</div>
+      <h2 class="section-heading">What Our <em>Clients</em> Say</h2>
+    </div>
+    <div class="swiper testimonial-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>" trans JR interior formed our penthouse into an absolute masterpiece. Every detail reflects an unparalleled level of sophistication and artistry. Truly life-changing work."</p>
+            <div class="t-author">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajiv Mehta">
+              <div>
+                <strong>Rajiv Mehta</strong>
+                <span>CEO, Apex Group</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"From the first consultation to the final reveal, the JR team was exceptional. Our villa now feels like a 5-star resort. We couldn't be happier."</p>
+            <div class="t-author">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma">
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>Fashion Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"The attention to detail and quality of craftsmanship is extraordinary. JR Interiors delivered a workspace that inspires creativity every single day."</p>
+            <div class="t-author">
+              <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Arjun Kapoor">
+              <div>
+                <strong>Arjun Kapoor</strong>
+                <span>Founder, TechVenture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Working with JR Interiors was an absolute pleasure. They understood our vision perfectly and delivered a home that exceeds every expectation we had."</p>
+            <div class="t-author">
+              <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Ananya Joshi">
+              <div>
+                <strong>Ananya Joshi</strong>
+                <span>Architect & Homeowner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Teaser -->
+<section class="gallery-teaser">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="label-gold">OUR WORK</div>
+      <h2 class="section-heading">A Glimpse of Our <em>Portfolio</em></h2>
+    </div>
+    <div class="gallery-masonry" data-aos="fade-up">
+      <div class="gm-item tall">
+        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=90" alt="Interior design 1">
+        <div class="gm-overlay"><span>Modern Living</span></div>
+      </div>
+      <div class="gm-item">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=90" alt="Kitchen design">
+        <div class="gm-overlay"><span>Gourmet Kitchen</span></div>
+      </div>
+      <div class="gm-item">
+        <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=800&q=90" alt="Bedroom">
+        <div class="gm-overlay"><span>Master Suite</span></div>
+      </div>
+      <div class="gm-item tall">
+        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&q=90" alt="Bathroom">
+        <div class="gm-overlay"><span>Spa Bathroom</span></div>
+      </div>
+      <div class="gm-item">
+        <img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?w=800&q=90" alt="Office design">
+        <div class="gm-overlay"><span>Home Office</span></div>
+      </div>
+      <div class="gm-item">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=90" alt="Dining room">
+        <div class="gm-overlay"><span>Dining Room</span></div>
+      </div>
+    </div>
+    <div class="text-center mt-5" data-aos="fade-up">
+      <a href="gallery.html" class="btn-gold">View Full Gallery</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner">
+  <div class="cta-bg" style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=90')"></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-content" data-aos="zoom-in">
+    <h2>Ready to Transform Your Space?</h2>
+    <p>Let's create something extraordinary together. Your dream home is just one conversation away.</p>
+    <a href="projects.html" class="btn-gold btn-lg">Start Your Project</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="logo.png" alt="JRIND Logo" class="footer-logo-img">
+            <span class="nav-brand-name">JR Interior Design</span>
+          </a>
+          <p>Crafting luxury living spaces that redefine elegance. Your vision, our expertise.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/917670953307" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html">Interior Design</a></li>
+            <li><a href="services.html">Luxury Painting</a></li>
+            <li><a href="services.html">3D Visualization</a></li>
+            <li><a href="services.html">Architecture</a></li>
+            <li><a href="services.html">Lighting Design</a></li>
+            <li><a href="services.html">Luxury Furnishing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 14, Design District, Bandra West, Mumbai 400050</li>
+            <li><i class="fas fa-phone"></i> +91 99999 99999</li>
+            <li><i class="fas fa-envelope"></i> hello@auruminteriors.com</li>
+            <li><i class="fas fa-clock"></i> Mon–Sat: 9am – 7pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 JR Interiors. All Rights Reserved. Crafted with <i class="fas fa-heart" style="color:#c9a84c"></i> in Mumbai.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/917670953307" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>
