@@ -3,79 +3,299 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us | AURUM INTERIORS</title>
-<meta name="description" content="Learn about Aurum Interiors — our story, our team, our values, and our 18-year journey of crafting luxury living spaces.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<title>About Us | JR Interior Design</title>
+<meta name="description" content="Learn about JR Interior Design — our story, our values, our design philosophy, and our journey of crafting luxury, warm modern living spaces.">
+<link rel="icon" href="assets/images/logo.png" type="image/png">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<!-- AOS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<!-- Swiper -->
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-
 <!-- Navbar -->
-<nav class="navbar scrolled" id="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">
-      <img src="logo.png" alt="JRIND Logo" class="nav-logo-img">
-      <span class="nav-brand-name">JR Interior Design</span>
+<nav class="navbar-jrind scrolled" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="assets/images/logo.png" alt="JRIND" class="nav-logo-img" style="filter:none">
+      <div>
+        <span class="nav-brand-text" style="color:var(--primary)">JR Interior Design</span>
+        <span class="nav-tagline" style="color:var(--muted)">Designing Spaces. Defining Lives.</span>
+      </div>
     </a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="about.html" class="nav-link active">About</a></li>
-      <li><a href="services.html" class="nav-link">Services</a></li>
-      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-      <li><a href="projects.html" class="nav-link">Projects</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-    <a href="contact.html" class="nav-cta">Enquiry</a>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <div class="nav-menu">
+      <a href="index.html" class="nav-link-item">Home</a>
+      <a href="about.html" class="nav-link-item active">About</a>
+      <a href="services.html" class="nav-link-item">Services</a>
+      <a href="gallery.html" class="nav-link-item">Gallery</a>
+      <a href="projects.html" class="nav-link-item">Projects</a>
+      <a href="contact.html" class="nav-link-item">Contact</a>
+      <a href="contact.html" class="btn-nav-cta">Enquiry</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <!-- Mobile Menu -->
-<div class="mobile-menu-overlay" id="mobileMenu">
-  <button class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></button>
-  <a href="index.html" class="nav-link">Home</a>
-  <a href="about.html" class="nav-link">About</a>
-  <a href="services.html" class="nav-link">Services</a>
-  <a href="gallery.html" class="nav-link">Gallery</a>
-  <a href="projects.html" class="nav-link">Projects</a>
-  <a href="contact.html" class="nav-link">Contact</a>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mobile-link">Home</a>
+  <a href="about.html" class="mobile-link active">About</a>
+  <a href="services.html" class="mobile-link">Services</a>
+  <a href="gallery.html" class="mobile-link">Gallery</a>
+  <a href="projects.html" class="mobile-link">Projects</a>
+  <a href="contact.html" class="mobile-link">Contact</a>
+  <a href="contact.html" class="btn-nav-cta">Enquiry</a>
 </div>
 
-<!-- Page Hero -->
-<section class="page-hero">
-  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=90')"></div>
+<!-- 1. HERO SECTION -->
+<section class="page-hero" style="padding-top:80px;">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=85'); background-size:cover; background-position:center;"></div>
   <div class="page-hero-overlay"></div>
-  <div class="page-hero-content">
-    <div class="label-gold" data-aos="fade-down">OUR STORY</div>
-    <h1 data-aos="fade-up"><About>JR <em>Interior </em></h1>
-    <div class="breadcrumb-nav" data-aos="fade-up" data-aos-delay="200">
-      
+  <div class="page-hero-content text-center container">
+    <div class="page-breadcrumb mb-3 justify-content-center">
      
     </div>
+    <h1 class="page-title mb-4">Designing Spaces That<br><em>Tell Stories</em></h1>
+    <p class="lead text-white mx-auto mb-5" style="max-width: 600px; font-weight: 300;">Creating timeless interiors that blend functionality, beauty, and comfort.</p>
+    <a href="contact.html" class="btn-primary-jr">Book Consultation <i class="bi bi-arrow-right ms-2"></i></a>
   </div>
 </section>
 
-<!-- About Story -->
-<section class="about-story">
-  <div class="container">
-    <div class="about-story-grid">
-      <div data-aos="fade-right">
-        <div class="label-gold">WHO WE ARE</div>
-        <h2 class="section-heading">A Legacy of <em>Craftsmanship</em> & Vision</h2>
-        <p style="margin-top:20px">Founded in 2008 by celebrated designer Arjun Rathore, Aurum Interiors was born from a singular vision: to create living spaces that are not just beautiful, but profoundly meaningful.</p>
-        <p>Over 18 years, we have evolved from a boutique design practice into one of India's most respected luxury interior studios, with projects spanning Mumbai, Delhi, Bangalore, and internationally in Dubai and London.</p>
-        <p>Every space we design carries our signature philosophy — that true luxury lies in the harmony of materials, light, proportion, and personal story. We don't just design rooms; we craft experiences.</p>
-        <a href="contact.html" class="btn-gold" style="margin-top:28px">Start Your Journey</a>
+<!-- 2. OUR STORY SECTION -->
+<section class="story-section py-5">
+  <div class="container-jr py-5">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="position-relative">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=85" alt="Luxury Interior by JR Interior Design" class="img-fluid rounded-4 shadow-lg" style="object-fit: cover; height: 600px; width: 100%;">
+          <div class="position-absolute bottom-0 end-0 bg-white p-4 rounded-start-4 shadow-lg" style="transform: translate(20px, -40px); border-left: 4px solid var(--accent);">
+            <h3 class="mb-0" style="color: var(--primary); font-family: var(--font-heading); font-size: 2.5rem;">12+</h3>
+            <p class="text-uppercase mb-0" style="color: var(--muted); font-size: 0.8rem; letter-spacing: 2px;">Years Experience</p>
+          </div>
+        </div>
       </div>
-      <div data-aos="fade-left">
-        <div class="about-story-img">
-          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=90" alt="Luxury interior by Aurum">
-          <div class="as-img-badge">
-            18<small>Years of<br>Excellence</small>
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">A Legacy of<br><em>Living Beautifully</em></h2>
+        <div class="divider-gold"></div>
+        <p class="mt-4" style="color:var(--muted); font-size:1.1rem; line-height:1.8;">
+          JR Interior Design is a premium interior design studio specializing in residential and commercial spaces. We create sophisticated environments that reflect personality, elevate lifestyles, and maximize functionality.
+        </p>
+        <p style="color:var(--muted); font-size:1.1rem; line-height:1.8;">
+          For over 12 years, we have transformed apartments, villas, offices, and commercial spaces into elegant destinations through thoughtful planning, quality craftsmanship, and unwavering attention to detail.
+        </p>
+        <div class="mt-5">
+          <a href="projects.html" class="btn-dark-jr">View Projects <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. COMPANY STATISTICS -->
+<section class="stats-section py-5 bg-dark position-relative">
+  <div class="container-jr py-5 position-relative z-2">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-item p-4 rounded-4" style="border: 1px solid rgba(255,255,255,0.1);">
+          <div class="stat-number text-white mb-2" data-target="12" data-suffix="+" style="font-size: 3rem; font-family: var(--font-heading); color: var(--accent) !important;">0</div>
+          <div class="stat-label text-white-50 text-uppercase" style="letter-spacing: 1px; font-size: 0.9rem;">Years Experience</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-item p-4 rounded-4" style="border: 1px solid rgba(255,255,255,0.1);">
+          <div class="stat-number text-white mb-2" data-target="150" data-suffix="+" style="font-size: 3rem; font-family: var(--font-heading); color: var(--accent) !important;">0</div>
+          <div class="stat-label text-white-50 text-uppercase" style="letter-spacing: 1px; font-size: 0.9rem;">Projects Completed</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-item p-4 rounded-4" style="border: 1px solid rgba(255,255,255,0.1);">
+          <div class="stat-number text-white mb-2" data-target="98" data-suffix="%" style="font-size: 3rem; font-family: var(--font-heading); color: var(--accent) !important;">0</div>
+          <div class="stat-label text-white-50 text-uppercase" style="letter-spacing: 1px; font-size: 0.9rem;">Client Satisfaction</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="stat-item p-4 rounded-4" style="border: 1px solid rgba(255,255,255,0.1);">
+          <div class="stat-number text-white mb-2" data-target="20" data-suffix="+" style="font-size: 3rem; font-family: var(--font-heading); color: var(--accent) !important;">0</div>
+          <div class="stat-label text-white-50 text-uppercase" style="letter-spacing: 1px; font-size: 0.9rem;">Industry Awards</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. CORE VALUES SECTION -->
+<section class="values-section py-5" style="background:var(--cream);">
+  <div class="container-jr py-5">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">Our Core Principles</span>
+      <h2 class="section-title">What Defines <em>Us</em></h2>
+      <div class="divider-gold mx-auto"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="value-card">
+          <i class="bi bi-lightbulb value-icon"></i>
+          <h3 class="value-title">Creativity</h3>
+          <p class="value-desc">Unique concepts tailored to every client, blending artistic vision with personal aesthetics.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="value-card">
+          <i class="bi bi-grid-3x3-gap value-icon"></i>
+          <h3 class="value-title">Functionality</h3>
+          <p class="value-desc">Beautiful spaces designed for everyday living, ensuring seamless flow and usability.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="value-card">
+          <i class="bi bi-stars value-icon"></i>
+          <h3 class="value-title">Innovation</h3>
+          <p class="value-desc">Modern solutions with timeless appeal, integrating the latest design technologies.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
+        <div class="value-card">
+          <i class="bi bi-trophy value-icon"></i>
+          <h3 class="value-title">Excellence</h3>
+          <p class="value-desc">Unwavering attention to every detail, from premium material selection to final finish.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. DESIGN PROCESS TIMELINE -->
+<section class="process-section-light">
+  <div class="container-jr">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-title text-white" style="font-size: 2.5rem;"><em>Our Design </em><em style="color: var(--accent); font-style: italic;">Process</em></h2>
+    </div>
+    
+    <div class="timeline-dark mt-5">
+      
+      <!-- Step 1 -->
+      <div class="tl-row-dark" data-aos="fade-up">
+        <div class="tl-half tl-date-half">
+          <span class="tl-num-gold">01</span>
+        </div>
+        <div class="tl-col-dot"></div>
+        <div class="tl-half tl-content-half">
+          <h3 class="tl-title-gold"><em>Consultation</em></h3>
+          <p class="tl-desc-lightblack">We begin with an in-depth discussion to understand your vision, functional requirements, lifestyle, and project budget.</p>
+        </div>
+      </div>
+      
+      <!-- Step 2 -->
+      <div class="tl-row-dark" data-aos="fade-up">
+        <div class="tl-half tl-date-half">
+          <span class="tl-num-gold">02</span>
+        </div>
+        <div class="tl-col-dot"></div>
+        <div class="tl-half tl-content-half">
+          <h3 class="tl-title-gold"><em>Concept Design</em></h3>
+          <p class="tl-desc-lightblack">Our team develops initial mood boards, visual concepts, and stylistic directions to ensure we align perfectly with your aesthetic goals.</p>
+        </div>
+      </div>
+      
+      <!-- Step 3 -->
+      <div class="tl-row-dark" data-aos="fade-up">
+        <div class="tl-half tl-date-half">
+          <span class="tl-num-gold">03</span>
+        </div>
+        <div class="tl-col-dot"></div>
+        <div class="tl-half tl-content-half">
+          <h3 class="tl-title-gold"><em>Space Planning</em></h3>
+          <p class="tl-desc-lightblack">We optimize your floor plan, drafting detailed 2D layouts and 3D renderings to showcase spatial flow and furniture placement.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="tl-row-dark" data-aos="fade-up">
+        <div class="tl-half tl-date-half">
+          <span class="tl-num-gold">04</span>
+        </div>
+        <div class="tl-col-dot"></div>
+        <div class="tl-half tl-content-half">
+          <h3 class="tl-title-gold"><em>Material Selection</em></h3>
+          <p class="tl-desc-lightblack">We source premium finishes, fabrics, fixtures, and custom elements to bring the conceptual design into tactile reality.</p>
+        </div>
+      </div>
+      
+      <!-- Step 5 -->
+      <div class="tl-row-dark" data-aos="fade-up">
+        <div class="tl-half tl-date-half">
+          <span class="tl-num-gold">05</span>
+        </div>
+        <div class="tl-col-dot"></div>
+        <div class="tl-half tl-content-half">
+          <h3 class="tl-title-gold"><em>Execution</em></h3>
+          <p class="tl-desc-lightblack">Our dedicated project managers oversee all structural work, custom joinery, and installation with rigorous quality control.</p>
+        </div>
+      </div>
+      
+      <!-- Step 6 -->
+      <div class="tl-row-dark" data-aos="fade-up">
+        <div class="tl-half tl-date-half">
+          <span class="tl-num-gold">06</span>
+        </div>
+        <div class="tl-col-dot"></div>
+        <div class="tl-half tl-content-half">
+          <h3 class="tl-title-gold"><em>Final Styling</em></h3>
+          <p class="tl-desc-lightblack">The final layer of magic. We curate accessories, artwork, and soft furnishings before officially handing over your newly transformed space.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- 6. TEAM SECTION -->
+<section class="team-section py-5" style="background:var(--cream);">
+  <div class="container-jr py-5">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">The People Behind The Spaces</span>
+      <h2 class="section-title">Meet Our <em>Design Experts</em></h2>
+      <div class="divider-gold mx-auto"></div>
+    </div>
+    
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100" style="transition: transform 0.3s ease;">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" class="card-img-top" alt="Principal Designer" style="height: 350px; object-fit: cover;">
+          <div class="card-body text-center p-4">
+            <h4 class="card-title" style="font-family: var(--font-heading); color: var(--primary);">Priya Rathore</h4>
+            <p class="text-uppercase mb-3" style="font-size: 0.8rem; letter-spacing: 1px; color: var(--accent);">Principal Designer</p>
+            <p class="card-text text-muted" style="font-size: 0.95rem;">With over 15 years in luxury interiors, Priya leads the creative vision, ensuring every project is an elegant reflection of the client.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100" style="transition: transform 0.3s ease;">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" class="card-img-top" alt="Senior Interior Designer" style="height: 350px; object-fit: cover;">
+          <div class="card-body text-center p-4">
+            <h4 class="card-title" style="font-family: var(--font-heading); color: var(--primary);">Arjun Desai</h4>
+            <p class="text-uppercase mb-3" style="font-size: 0.8rem; letter-spacing: 1px; color: var(--accent);">Senior Interior Designer</p>
+            <p class="card-text text-muted" style="font-size: 0.95rem;">An expert in spatial dynamics and modern aesthetics, Arjun excels at creating layouts that maximize both light and functionality.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0" data-aos="fade-up" data-aos-delay="300">
+        <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100" style="transition: transform 0.3s ease;">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80" class="card-img-top" alt="Project Manager" style="height: 350px; object-fit: cover;">
+          <div class="card-body text-center p-4">
+            <h4 class="card-title" style="font-family: var(--font-heading); color: var(--primary);">Meera Kapoor</h4>
+            <p class="text-uppercase mb-3" style="font-size: 0.8rem; letter-spacing: 1px; color: var(--accent);">Project Manager</p>
+            <p class="card-text text-muted" style="font-size: 0.95rem;">Meera orchestrates every phase of execution, managing contractors and timelines to ensure flawless, on-time project delivery.</p>
           </div>
         </div>
       </div>
@@ -83,230 +303,149 @@
   </div>
 </section>
 
-<!-- Stats -->
-<section class="stats-section">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-item" data-aos="fade-up"><div class="stat-num"><span class="counter" data-target="500">0</span>+</div><div class="stat-label">Projects Completed</div></div>
-      <div class="stat-divider"></div>
-      <div class="stat-item" data-aos="fade-up" data-aos-delay="100"><div class="stat-num"><span class="counter" data-target="320">0</span>+</div><div class="stat-label">Happy Clients</div></div>
-      <div class="stat-divider"></div>
-      <div class="stat-item" data-aos="fade-up" data-aos-delay="200"><div class="stat-num"><span class="counter" data-target="25">0</span></div><div class="stat-label">Expert Designers</div></div>
-      <div class="stat-divider"></div>
-      <div class="stat-item" data-aos="fade-up" data-aos-delay="300"><div class="stat-num"><span class="counter" data-target="62">0</span>+</div><div class="stat-label">Industry Awards</div></div>
+<!-- 7. CLIENT TESTIMONIALS -->
+<section class="testimonials-section py-5">
+  <div class="container-jr py-5">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">Client Love</span>
+      <h2 class="section-title">What Our <em>Clients</em> Say</h2>
+      <div class="divider-gold mx-auto"></div>
     </div>
-  </div>
-</section>
-
-<!-- Values -->
-<section class="values-section">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <div class="label-gold">WHAT DRIVES US</div>
-      <h2 class="section-heading">Our Core <em>Values</em></h2>
-    </div>
-    <div class="values-grid">
-      <div class="value-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="value-icon"><i class="fas fa-gem"></i></div>
-        <h4>Excellence</h4>
-        <p>We pursue perfection in every detail — from the choice of materials to the final finish.</p>
-      </div>
-      <div class="value-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="value-icon"><i class="fas fa-heart"></i></div>
-        <h4>Passion</h4>
-        <p>Design is our calling. We pour genuine creativity and care into every single project.</p>
-      </div>
-      <div class="value-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="value-icon"><i class="fas fa-users"></i></div>
-        <h4>Collaboration</h4>
-        <p>We partner deeply with our clients, ensuring every space truly reflects who they are.</p>
-      </div>
-      <div class="value-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="value-icon"><i class="fas fa-leaf"></i></div>
-        <h4>Sustainability</h4>
-        <p>Beauty and responsibility coexist. We source ethically and design for longevity.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Timeline -->
-<section class="timeline-section">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <div class="label-gold">OUR JOURNEY</div>
-      <h2 class="section-heading">A Timeline of <em>Milestones</em></h2>
-    </div>
-    <div class="timeline">
-      <div class="tl-item" data-aos="fade-right">
-        <div class="tl-year">2008</div>
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <h4>Studio Founded</h4>
-          <p>JR Interior Design opens its first studio in Bandra West, Mumbai with a team of 3 passionate designers.</p>
+    
+    <div class="row g-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimonial-card">
+          <div class="testimonial-stars mb-3">
+            <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i>
+          </div>
+          <p class="testimonial-text mb-4">"The team at JR Interior Design brought our dream home to life. The attention to detail and the sheer quality of the custom furniture exceeded all our expectations."</p>
+          <div class="testimonial-author d-flex align-items-center">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Client" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
+            <div>
+              <h5 class="mb-0" style="font-size: 1rem; color: var(--primary);">Aisha Sharma</h5>
+              <small class="text-muted">Villa Owner, Mumbai</small>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="tl-item" data-aos="fade-left">
-        <div class="tl-year">2012</div>
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <h4>First National Award</h4>
-          <p>Recognized at the India Design Awards for Best Residential Interior — The Oberoi Residence, Delhi.</p>
+      
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="testimonial-card">
+          <div class="testimonial-stars mb-3">
+            <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i>
+          </div>
+          <p class="testimonial-text mb-4">"They completely transformed our corporate office. The space is now incredibly functional, looks wildly sophisticated, and has significantly boosted team morale."</p>
+          <div class="testimonial-author d-flex align-items-center">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Client" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
+            <div>
+              <h5 class="mb-0" style="font-size: 1rem; color: var(--primary);">Vikram Reddy</h5>
+              <small class="text-muted">CEO, Tech Innovations</small>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="tl-item" data-aos="fade-right">
-        <div class="tl-year">2016</div>
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <h4>International Expansion</h4>
-          <p>Opened our Dubai studio, serving high-net-worth clients across the Middle East and Europe.</p>
-        </div>
-      </div>
-      <div class="tl-item" data-aos="fade-left">
-        <div class="tl-year">2019</div>
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <h4>100+ Projects Milestone</h4>
-          <p>Celebrated completing over 100 luxury projects across residential, commercial, and hospitality sectors.</p>
-        </div>
-      </div>
-      <div class="tl-item" data-aos="fade-right">
-        <div class="tl-year">2023</div>
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <h4>Asia's Top 10 Studio</h4>
-          <p>Named one of Asia's Top 10 Interior Design Studios by Architectural Digest India.</p>
-        </div>
-      </div>
-      <div class="tl-item" data-aos="fade-left">
-        <div class="tl-year">2025</div>
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <h4>500 Projects & Beyond</h4>
-          <p>A landmark 500th project completed — The Elara Penthouse, Mumbai. The journey continues.</p>
+      
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="testimonial-card">
+          <div class="testimonial-stars mb-3">
+            <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i>
+          </div>
+          <p class="testimonial-text mb-4">"Professional, highly creative, and incredibly responsive. From the first consultation to the final styling, the entire turnkey process was absolute perfection."</p>
+          <div class="testimonial-author d-flex align-items-center">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Client" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
+            <div>
+              <h5 class="mb-0" style="font-size: 1rem; color: var(--primary);">Nandini Verma</h5>
+              <small class="text-muted">Apartment Owner, Bangalore</small>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Team -->
-<section class="team-section">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <div class="label-gold">THE PEOPLE</div>
-      <h2 class="section-heading">Meet Our <em>Creative</em> Team</h2>
+<!-- 8. CTA SECTION -->
+<section class="cta-section" style="position: relative; padding: 120px 0; background-color: var(--primary); text-align: center;">
+  <div class="cta-bg" style="position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&q=85'); background-size: cover; background-position: center; opacity: 0.3;"></div>
+  <div class="container-jr position-relative z-2">
+    <div data-aos="fade-up">
+      <h2 class="mb-4 text-white" style="font-family: var(--font-heading); font-size: 3rem;">Let's Design Something <em style="color: var(--gold-light); font-style: italic;">Extraordinary</em> Together</h2>
+      <a href="contact.html" class="btn-primary-jr btn-lg mt-3 px-5 py-3">Start Your Project <i class="bi bi-arrow-right ms-2"></i></a>
     </div>
-    <div class="team-grid">
-      <div class="team-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="team-img">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=90" alt="Arjun Rathore">
-          <div class="team-social-overlay">
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-info">
-          <h4>Arjun Rathore</h4>
-          <span>Founder & Principal Designer</span>
-        </div>
-      </div>
-      <div class="team-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="team-img">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=90" alt="Meera Kapoor">
-          <div class="team-social-overlay">
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-info">
-          <h4>Meera Kapoor</h4>
-          <span>Creative Director</span>
-        </div>
-      </div>
-      <div class="team-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="team-img">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=90" alt="Rohit Sharma">
-          <div class="team-social-overlay">
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-info">
-          <h4>Rohit Sharma</h4>
-          <span>Lead Architect</span>
-        </div>
-      </div>
-      <div class="team-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="team-img">
-          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&q=90" alt="Priya Nair">
-          <div class="team-social-overlay">
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-info">
-          <h4>Priya Nair</h4>
-          <span>3D Visualization Expert</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA Banner -->
-<section class="cta-banner">
-  <div class="cta-bg" style="background-image:url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&q=90')"></div>
-  <div class="cta-overlay"></div>
-  <div class="cta-content" data-aos="zoom-in">
-    <h2>Ready to Work With Us?</h2>
-    <p>Let's build something extraordinary together.</p>
-    <a href="contact.html" class="btn-gold btn-lg">Get in Touch</a>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="site-footer">
-  <div class="footer-top">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="logo.png" alt="JRIND Logo" class="footer-logo-img">
-          <p>Crafting luxury living spaces that redefine elegance. Your vision, our expertise.</p>
-          <div class="footer-social">
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://wa.me/917670953307" target="_blank"><i class="fab fa-whatsapp"></i></a>
-          </div>
+<footer class="footer">
+  <div class="container-jr">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <a href="index.html" class="footer-logo-wrap">
+          <img src="assets/images/logo.png" alt="JRIND" class="footer-logo-img">
+          <div class="footer-brand-name">JR Interior Design</div>
+        </a>
+        <p class="footer-desc">Designing spaces that embrace warmth, texture, and personality. Your vision, our expertise.</p>
+         <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61591037533583" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/jrintdn?igsh=MWVpcGVtMDhrODlmOA==" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UC2FfBQZfA6tqbXn0-oKawMA" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
         </div>
-        <div class="footer-col"><h5>Quick Links</h5><ul>
-          <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li>
-          <li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li>
-        </ul></div>
-        <div class="footer-col"><h5>Services</h5><ul>
-          <li><a href="services.html">Interior Design</a></li><li><a href="services.html">Luxury Painting</a></li>
-          <li><a href="services.html">3D Visualization</a></li><li><a href="services.html">Architecture</a></li>
-          <li><a href="services.html">Lighting Design</a></li><li><a href="services.html">Luxury Furnishing</a></li>
-        </ul></div>
-        <div class="footer-col"><h5>Contact</h5><ul class="footer-contact">
-          <li><i class="fas fa-map-marker-alt"></i>14, Design District, Bandra West, Mumbai 400050</li>
-          <li><i class="fas fa-phone"></i>+91 99999 99999</li>
-          <li><i class="fas fa-envelope"></i>hello@auruminteriors.com</li>
-          <li><i class="fas fa-clock"></i>Mon–Sat: 9am – 10pm</li>
-        </ul></div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <h5 class="footer-heading">Quick Links</h5>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <h5 class="footer-heading">Services</h5>
+        <div class="footer-links">
+          <a href="services.html">Residential Design</a>
+          <a href="services.html">Commercial Design</a>
+          <a href="services.html">Space Planning</a>
+          <a href="services.html">Custom Furniture</a>
+          <a href="services.html">Modular Kitchen</a>
+          <a href="services.html">Turnkey Projects</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <h5 class="footer-heading">Get in Touch</h5>
+        <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i> <span>Venkata Ramayya Nagar Gopal Nagar, 73-22-02B, Punta Rd, Valaki Nagar, Narayanapuram, Cyclone Colony, Rajamahendravaram, Andhra Pradesh 533103</span></div>
+        <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+91 96761 33255</span></div>
+       
+        <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Mon – Sat: 10am – 5pm</span></div>
       </div>
     </div>
   </div>
-  <div class="footer-bottom"><div class="container"><p>© 2026 Aurum Interiors. All Rights Reserved.</p></div></div>
+  <div class="footer-bottom">
+    <div class="container-jr d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <div class="footer-bottom-text">© 2025 JR Interior Design. All Rights Reserved.</div>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </div>
 </footer>
 
+<!-- Floating WhatsApp -->
+<div class="floating-whatsapp-wrap">
+  <div class="floating-wa-pulse"></div>
+  <a href="https://wa.me/919676133255" class="floating-wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i><span>Chat With Us</span>
+  </a>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="main.js"></script>
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/917670953307" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.9/dist/lenis.min.js"></script>
+<script>gsap.registerPlugin(ScrollTrigger);</script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

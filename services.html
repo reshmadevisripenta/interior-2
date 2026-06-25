@@ -3,300 +3,260 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | AURUM INTERIORS</title>
-<meta name="description" content="Explore Aurum Interiors' full range of luxury design services — interior design, 3D visualization, architecture, lighting, and more.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<title>Our Services | JR Interior Design</title>
+<meta name="description" content="Explore JR Interior Design's premium services — Residential Design, Commercial Interiors, Space Planning, Modular Kitchen, Turnkey Projects and more.">
+<link rel="icon" href="assets/images/logo.png" type="image/png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="logo.png" type="image/png">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<nav class="navbar scrolled" id="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">
-      <img src="logo.png" alt="JRIND Logo" class="nav-logo-img">
-      <span class="nav-brand-name">JR Interior Design</span>
+<!-- Navbar -->
+<nav class="navbar-jrind scrolled" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="assets/images/logo.png" alt="JRIND" class="nav-logo-img" style="filter:none">
+      <div>
+        <span class="nav-brand-text" style="color:var(--primary)">JR Interior Design</span>
+        <span class="nav-tagline" style="color:var(--muted)">Designing Spaces. Defining Lives.</span>
+      </div>
     </a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="about.html" class="nav-link">About</a></li>
-      <li><a href="services.html" class="nav-link active">Services</a></li>
-      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-      <li><a href="projects.html" class="nav-link">Projects</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-    <a href="contact.html" class="nav-cta">Enquiry</a>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <div class="nav-menu">
+      <a href="index.html" class="nav-link-item">Home</a>
+      <a href="about.html" class="nav-link-item">About</a>
+      <a href="services.html" class="nav-link-item active">Services</a>
+      <a href="gallery.html" class="nav-link-item">Gallery</a>
+      <a href="projects.html" class="nav-link-item">Projects</a>
+      <a href="contact.html" class="nav-link-item">Contact</a>
+      <a href="contact.html" class="btn-nav-cta">Enquiry</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
-
-<div class="mobile-menu-overlay" id="mobileMenu">
-  <button class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></button>
-  <a href="index.html" class="nav-link">Home</a>
-  <a href="about.html" class="nav-link">About</a>
-  <a href="services.html" class="nav-link">Services</a>
-  <a href="gallery.html" class="nav-link">Gallery</a>
-  <a href="projects.html" class="nav-link">Projects</a>
-  <a href="contact.html" class="nav-link">Contact</a>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mobile-link">Home</a>
+  <a href="about.html" class="mobile-link">About</a>
+  <a href="services.html" class="mobile-link">Services</a>
+  <a href="gallery.html" class="mobile-link">Gallery</a>
+  <a href="projects.html" class="mobile-link">Projects</a>
+  <a href="contact.html" class="mobile-link">Contact</a>
+  <a href="contact.html" class="btn-nav-cta">Enquiry</a>
 </div>
 
 <!-- Page Hero -->
-<section class="page-hero">
-  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1616137466211-f939a420be84?w=1920&q=90')"></div>
+<section class="page-hero" style="padding-top:80px;">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=1920&q=85'); background-size:cover; background-position:center;"></div>
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
-    <div class="label-gold" data-aos="fade-down">WHAT WE OFFER</div>
-    <h1 data-aos="fade-up">Our <em>Services</em></h1>
-    <div class="breadcrumb-nav" data-aos="fade-up" data-aos-delay="200">
+    <div class="page-breadcrumb mb-3">
       
     </div>
+    <h1 class="page-title">Our Premium<br><em>Services</em></h1>
   </div>
 </section>
 
-<!-- Services Detail -->
-<section class="services-full">
-  <div class="container">
-
-    <!-- Service 1 -->
-    <div class="service-detail-card" data-aos="fade-up">
-      <div class="sdc-img">
-        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=90" alt="Interior Design">
+<!-- Services Intro -->
+<section class="py-5" style="background:var(--cream);">
+  <div class="container-jr">
+    <div class="row align-items-center g-5 py-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title">Crafting Every <em>Detail</em><br>of Your Space</h2>
+        <div class="divider-gold"></div>
+        <p class="section-subtitle mt-3">From complete residential transformations to bespoke commercial interiors, every service we offer is built on a foundation of artistry, precision, and a deep understanding of your needs.</p>
       </div>
-      <div class="sdc-content">
-        <div class="label-gold">01 — SERVICE</div>
-        <h2>Interior Design</h2>
-        <p>Our signature interior design service covers every aspect of your space — from furniture selection to material palette, spatial planning, and decorative finishing touches.</p>
-        <p>We work across residential apartments, luxury villas, penthouses, and commercial spaces, bringing the same level of detail and care to every project.</p>
-        <div class="sdc-features">
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Space planning & layout optimization</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Furniture selection & procurement</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Material & finish curation</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Custom joinery & millwork design</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Art & accessory styling</div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div style="border-radius:var(--radius-lg); overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=85" alt="Our Services" style="width:100%; height:380px; object-fit:cover;" loading="lazy">
         </div>
-        <a href="contact.html" class="btn-gold">Enquire Now</a>
       </div>
     </div>
-
-    <!-- Service 2 -->
-    <div class="service-detail-card reverse" data-aos="fade-up">
-      <div class="sdc-img">
-        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=90" alt="Luxury Painting">
-      </div>
-      <div class="sdc-content">
-        <div class="label-gold">02 — SERVICE</div>
-        <h2>Luxury Painting</h2>
-        <p>Transform your walls from blank surfaces into breathtaking expressions of art. Our master painters deliver bespoke wall finishes, custom murals, and decorative paint techniques.</p>
-        <p>From venetian plaster to marble effect finishes, Japanese micro-cement to hand-painted murals — we create surfaces that command attention.</p>
-        <div class="sdc-features">
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Venetian plaster & lime wash finishes</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Hand-painted custom murals</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Metallic & ombre effects</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Faux marble & stone textures</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Exterior premium painting</div>
-        </div>
-        <a href="contact.html" class="btn-gold">Enquire Now</a>
-      </div>
-    </div>
-
-    <!-- Service 3 -->
-    <div class="service-detail-card" data-aos="fade-up">
-      <div class="sdc-img">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=90" alt="3D Visualization">
-      </div>
-      <div class="sdc-content">
-        <div class="label-gold">03 — SERVICE</div>
-        <h2>3D Visualization</h2>
-        <p>See your future space before a single nail is hammered. Our photorealistic 3D renders and immersive virtual walkthroughs bring your design concept to life with stunning clarity.</p>
-        <p>We use industry-leading software to create renders indistinguishable from real photography, enabling you to experience and approve every detail with confidence.</p>
-        <div class="sdc-features">
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Photorealistic 3D renderings</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> 360° panoramic views</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Virtual reality walkthroughs</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Fly-through animations</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Day & night lighting scenarios</div>
-        </div>
-        <a href="contact.html" class="btn-gold">Enquire Now</a>
-      </div>
-    </div>
-
-    <!-- Service 4 -->
-    <div class="service-detail-card reverse" data-aos="fade-up">
-      <div class="sdc-img">
-        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=90" alt="Architecture">
-      </div>
-      <div class="sdc-content">
-        <div class="label-gold">04 — SERVICE</div>
-        <h2>Architecture</h2>
-        <p>From ground-up construction to complete home renovations, our architectural team delivers designs that are as functional as they are breathtaking.</p>
-        <p>We handle everything from initial concept and planning permissions to construction management and final handover, ensuring a seamless journey at every stage.</p>
-        <div class="sdc-features">
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Residential & commercial architecture</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Structural planning & approval drawings</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Construction management</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Façade & exterior design</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Landscape integration</div>
-        </div>
-        <a href="contact.html" class="btn-gold">Enquire Now</a>
-      </div>
-    </div>
-
-    <!-- Service 5 -->
-    <div class="service-detail-card" data-aos="fade-up">
-      <div class="sdc-img">
-        <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&q=90" alt="Lighting Design">
-      </div>
-      <div class="sdc-content">
-        <div class="label-gold">05 — SERVICE</div>
-        <h2>Lighting Design</h2>
-        <p>Great lighting is the invisible hand that ties a design together. Our lighting designers craft bespoke schemes that enhance your architecture, set the mood, and tell your space's story.</p>
-        <p>We design layered lighting systems that adapt from vibrant entertaining mode to serene, intimate ambience at the touch of a button.</p>
-        <div class="sdc-features">
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Architectural lighting plans</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Smart lighting system design</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Decorative fixture selection</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Accent & task lighting</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Exterior & landscape lighting</div>
-        </div>
-        <a href="contact.html" class="btn-gold">Enquire Now</a>
-      </div>
-    </div>
-
-    <!-- Service 6 -->
-    <div class="service-detail-card reverse" data-aos="fade-up">
-      <div class="sdc-img">
-        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=90" alt="Luxury Furnishing">
-      </div>
-      <div class="sdc-content">
-        <div class="label-gold">06 — SERVICE</div>
-        <h2>Luxury Furnishing</h2>
-        <p>We curate and source the finest furniture, textiles, and decorative objects from premier manufacturers across Italy, Scandinavia, Japan, and India.</p>
-        <p>Every piece is selected to harmonize with your space's architecture and your personal aesthetic — creating environments that feel coherent, luxurious, and deeply personal.</p>
-        <div class="sdc-features">
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Bespoke furniture design</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> International brand procurement</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Luxury textile & rug curation</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Art acquisition & placement</div>
-          <div class="sdc-feature"><i class="fas fa-check-circle"></i> Complete styling & installation</div>
-        </div>
-        <a href="contact.html" class="btn-gold">Enquire Now</a>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- Pricing -->
-<section class="pricing-section">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <div class="label-gold">INVESTMENT</div>
-      <h2 class="section-heading">Transparent <em>Pricing</em></h2>
+<!-- Services Grid -->
+<section class="services-section">
+  <div class="container-jr">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label">All Services</span>
+      <h2 class="section-title">Everything You <em>Need</em></h2>
+      <div class="divider-gold mx-auto"></div>
     </div>
-    <div class="pricing-grid">
-      <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
-        <h3>Essential</h3>
-        <p style="color:var(--muted);font-size:0.85rem">For apartments & small spaces</p>
-        <div class="pricing-price">₹8L<span>/project</span></div>
-        <ul class="pricing-features">
-          <li><i class="fas fa-check"></i> Up to 1,000 sq ft</li>
-          <li><i class="fas fa-check"></i> 2D floor plan & layout</li>
-          <li><i class="fas fa-check"></i> 3 design concepts</li>
-          <li><i class="fas fa-check"></i> Material selection guide</li>
-          <li><i class="fas fa-check"></i> 3 months post-handover support</li>
-        </ul>
-        <a href="contact.html" class="btn-outline" style="width:100%;text-align:center;justify-content:center">Get Started</a>
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <i class="bi bi-house-heart service-icon"></i>
+          <h3 class="service-title">Residential Interior Design</h3>
+          <p class="service-desc">We transform houses into homes — spaces that reflect your personality, lifestyle, and aspirations. Every room, every corner, crafted with warmth and intention.</p>
+          <a href="contact.html" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+        </div>
       </div>
-      <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
-        <div class="pricing-badge">Most Popular</div>
-        <h3>Signature</h3>
-        <p style="color:var(--muted);font-size:0.85rem">For villas & luxury apartments</p>
-        <div class="pricing-price">₹25L<span>/project</span></div>
-        <ul class="pricing-features">
-          <li><i class="fas fa-check"></i> Up to 4,000 sq ft</li>
-          <li><i class="fas fa-check"></i> Full 3D visualization</li>
-          <li><i class="fas fa-check"></i> 5 design concepts</li>
-          <li><i class="fas fa-check"></i> Premium material sourcing</li>
-          <li><i class="fas fa-check"></i> Furniture procurement</li>
-          <li><i class="fas fa-check"></i> On-site project management</li>
-          <li><i class="fas fa-check"></i> 12 months support</li>
-        </ul>
-        <a href="contact.html" class="btn-gold" style="width:100%;text-align:center">Get Started</a>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="service-card">
+          <i class="bi bi-building service-icon"></i>
+          <h3 class="service-title">Commercial Interior Design</h3>
+          <p class="service-desc">Elevate your workspace with interiors that inspire productivity, impress clients, and embody your brand identity. Offices, retail, and hospitality spaces.</p>
+          <a href="contact.html" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+        </div>
       </div>
-      <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
-        <h3>Prestige</h3>
-        <p style="color:var(--muted);font-size:0.85rem">For penthouses & estates</p>
-        <div class="pricing-price">₹75L<span>+</span></div>
-        <ul class="pricing-features">
-          <li><i class="fas fa-check"></i> Unlimited sq footage</li>
-          <li><i class="fas fa-check"></i> Photorealistic VR walkthrough</li>
-          <li><i class="fas fa-check"></i> Unlimited design iterations</li>
-          <li><i class="fas fa-check"></i> International sourcing</li>
-          <li><i class="fas fa-check"></i> Dedicated project architect</li>
-          <li><i class="fas fa-check"></i> White-glove installation</li>
-          <li><i class="fas fa-check"></i> Lifetime concierge support</li>
-        </ul>
-        <a href="contact.html" class="btn-outline" style="width:100%;text-align:center;justify-content:center">Get Started</a>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <i class="bi bi-grid-1x2 service-icon"></i>
+          <h3 class="service-title">Space Planning</h3>
+          <p class="service-desc">Maximise the potential of your space with intelligent layouts, ergonomic planning, and functional flow that makes every square foot count.</p>
+          <a href="contact.html" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+        </div>
       </div>
+
+    
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="service-card">
+          <i class="bi bi-cup-hot service-icon"></i>
+          <h3 class="service-title">Modular Kitchen</h3>
+          <p class="service-desc">Premium modular kitchen solutions that combine intelligent storage, premium hardware, and sophisticated aesthetics for a cooking experience like no other.</p>
+          <a href="contact.html" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <i class="bi bi-lightbulb service-icon"></i>
+          <h3 class="service-title">Lighting Design</h3>
+          <p class="service-desc">Masterful lighting schemes that set the perfect mood, highlight architectural features, and transform the ambience of any space from ordinary to extraordinary.</p>
+          <a href="contact.html" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <i class="bi bi-tools service-icon"></i>
+          <h3 class="service-title">Renovation</h3>
+          <p class="service-desc">Breathe new life into your existing space. Our renovation service revitalizes, modernizes, and elevates interiors while honoring the soul of the space.</p>
+          <a href="contact.html" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="service-card">
+          <i class="bi bi-key service-icon"></i>
+          <h3 class="service-title">Turnkey Projects</h3>
+          <p class="service-desc">Complete end-to-end project delivery — from blank canvas to move-in ready. We handle design, procurement, execution, and final handover seamlessly.</p>
+          <a href="contact.html" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <i class="bi bi-palette service-icon"></i>
+          <h3 class="service-title">Material Selection</h3>
+          <p class="service-desc">Expert curation of finishes, fabrics, stones, woods, and textures — sourced from premium suppliers to bring your design vision to exquisite reality.</p>
+          <a href="contact.html" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <i class="bi bi-kanban service-icon"></i>
+          <h3 class="service-title">Project Management</h3>
+          <p class="service-desc">Dedicated project managers who coordinate every vendor, contractor, and timeline — ensuring your project is delivered on time, on budget, and beyond expectations.</p>
+          <a href="contact.html" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="cta-banner">
-  <div class="cta-bg" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=90')"></div>
+<section class="cta-section">
+  <div class="cta-bg" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=85');"></div>
   <div class="cta-overlay"></div>
-  <div class="cta-content" data-aos="zoom-in">
-    <h2>Not Sure Which Plan?</h2>
-    <p>Book a free 30-minute consultation and we'll guide you to the perfect solution.</p>
-    <a href="contact.html" class="btn-gold btn-lg">Book Free Consultation</a>
+  <div class="container-jr">
+    <div class="cta-content" data-aos="fade-up">
+      <span class="section-label" style="color:var(--gold)">Begin Your Journey</span>
+      <h2 class="cta-title">Ready to Transform<br><em style="font-style:italic;color:var(--gold-light)">Your Space?</em></h2>
+      <p class="cta-subtitle">Book a complimentary consultation and let's explore what's possible for your space.</p>
+      <a href="contact.html" class="btn-primary-jr">Book Free Consultation <i class="bi bi-arrow-right ms-2"></i></a>
+    </div>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="site-footer">
-  <div class="footer-top"><div class="container"><div class="footer-grid">
-    <div class="footer-brand">
-      <a href="index.html" class="nav-logo">
-        <img src="logo.png" alt="JRIND Logo" class="footer-logo-img">
-        <span class="nav-brand-name">JR Interior Design</span>
-      </a>
-      <p>Crafting luxury living spaces that redefine elegance. Your vision, our expertise.</p>
-      <div class="footer-social">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://wa.me/917670953307" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<footer class="footer">
+  <div class="container-jr">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <a href="index.html" class="footer-logo-wrap">
+          <img src="assets/images/logo.png" alt="JRIND" class="footer-logo-img">
+          <div class="footer-brand-name">JR Interior Design</div>
+        </a>
+        <p class="footer-desc">Designing spaces that embrace warmth, texture, and personality. Your vision, our expertise.</p>
+         <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61591037533583" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/jrintdn?igsh=MWVpcGVtMDhrODlmOA==" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UC2FfBQZfA6tqbXn0-oKawMA" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <h5 class="footer-heading">Quick Links</h5>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <h5 class="footer-heading">Services</h5>
+        <div class="footer-links">
+          <a href="services.html">Residential Design</a>
+          <a href="services.html">Commercial Design</a>
+          <a href="services.html">Space Planning</a>
+          <a href="services.html">Custom Furniture</a>
+          <a href="services.html">Modular Kitchen</a>
+          <a href="services.html">Turnkey Projects</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <h5 class="footer-heading">Get in Touch</h5>
+        <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i> <span>Venkata Ramayya Nagar Gopal Nagar, 73-22-02B, Punta Rd, Valaki Nagar, Narayanapuram, Cyclone Colony, Rajamahendravaram, Andhra Pradesh 533103</span></div>
+        <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+91 96761 33255</span></div>
+       
+        <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Mon – Sat: 10am – 5pm</span></div>
       </div>
     </div>
-    <div class="footer-col"><h5>Quick Links</h5><ul>
-      <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li>
-      <li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li>
-    </ul></div>
-    <div class="footer-col"><h5>Services</h5><ul>
-      <li><a href="services.html">Interior Design</a></li><li><a href="services.html">Luxury Painting</a></li>
-      <li><a href="services.html">3D Visualization</a></li><li><a href="services.html">Architecture</a></li>
-      <li><a href="services.html">Lighting Design</a></li><li><a href="services.html">Luxury Furnishing</a></li>
-    </ul></div>
-    <div class="footer-col"><h5>Contact</h5><ul class="footer-contact">
-      <li><i class="fas fa-map-marker-alt"></i>14, Design District, Bandra West, Mumbai 400050</li>
-      <li><i class="fas fa-phone"></i>+91 99999 99999</li>
-      <li><i class="fas fa-envelope"></i>hello@auruminteriors.com</li>
-      <li><i class="fas fa-clock"></i>Mon–Sat: 9am – 10pm</li>
-    </ul></div>
-  </div></div></div>
-  <div class="footer-bottom"><div class="container"><p>© 2026 Aurum Interiors. All Rights Reserved.</p></div></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container-jr d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <div class="footer-bottom-text">© 2025 JR Interior Design. All Rights Reserved.</div>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </div>
 </footer>
 
+<!-- Floating WhatsApp -->
+<div class="floating-whatsapp-wrap">
+  <div class="floating-wa-pulse"></div>
+  <a href="https://wa.me/919676133255" class="floating-wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i><span>Chat With Us</span>
+  </a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="main.js"></script>
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/917670953307" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.9/dist/lenis.min.js"></script>
+<script>gsap.registerPlugin(ScrollTrigger);</script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

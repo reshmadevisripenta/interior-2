@@ -3,262 +3,300 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us | AURUM INTERIORS</title>
-<meta name="description" content="Get in touch with Aurum Interiors for a free consultation. Design your dream space with India's premier luxury interior studio.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<title>Contact Us | JR Interior Design</title>
+<meta name="description" content="Get in touch with JR Interior Design. Book a free consultation, send us a message, or visit our studio in Mumbai.">
+<link rel="icon" href="assets/images/logo.png" type="image/png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="logo.png" type="image/png">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<nav class="navbar scrolled" id="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">
-      <img src="logo.png" alt="JRIND Logo" class="nav-logo-img">
-      <span class="nav-brand-name">JR Interior Design</span>
+<!-- Navbar -->
+<nav class="navbar-jrind scrolled" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="assets/images/logo.png" alt="JRIND" class="nav-logo-img" style="filter:none">
+      <div>
+        <span class="nav-brand-text" style="color:var(--primary)">JR Interior Design</span>
+        <span class="nav-tagline" style="color:var(--muted)">Designing Spaces. Defining Lives.</span>
+      </div>
     </a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="about.html" class="nav-link">About</a></li>
-      <li><a href="services.html" class="nav-link">Services</a></li>
-      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-      <li><a href="projects.html" class="nav-link">Projects</a></li>
-      <li><a href="contact.html" class="nav-link active">Contact</a></li>
-    </ul>
-    <a href="contact.html" class="nav-cta">Enquiry</a>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <div class="nav-menu">
+      <a href="index.html" class="nav-link-item">Home</a>
+      <a href="about.html" class="nav-link-item">About</a>
+      <a href="services.html" class="nav-link-item">Services</a>
+      <a href="gallery.html" class="nav-link-item">Gallery</a>
+      <a href="projects.html" class="nav-link-item">Projects</a>
+      <a href="contact.html" class="nav-link-item active">Contact</a>
+      <a href="contact.html" class="btn-nav-cta">Enquiry</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
-
-<div class="mobile-menu-overlay" id="mobileMenu">
-  <button class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></button>
-  <a href="index.html" class="nav-link">Home</a>
-  <a href="about.html" class="nav-link">About</a>
-  <a href="services.html" class="nav-link">Services</a>
-  <a href="gallery.html" class="nav-link">Gallery</a>
-  <a href="projects.html" class="nav-link">Projects</a>
-  <a href="contact.html" class="nav-link">Contact</a>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mobile-link">Home</a>
+  <a href="about.html" class="mobile-link">About</a>
+  <a href="services.html" class="mobile-link">Services</a>
+  <a href="gallery.html" class="mobile-link">Gallery</a>
+  <a href="projects.html" class="mobile-link">Projects</a>
+  <a href="contact.html" class="mobile-link">Contact</a>
+  <a href="contact.html" class="btn-nav-cta">Enquiry</a>
 </div>
 
 <!-- Page Hero -->
-<section class="page-hero">
-  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=90')"></div>
+<section class="page-hero" style="padding-top:80px;">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=85'); background-size:cover; background-position:center;"></div>
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
-    <div class="label-gold" data-aos="fade-down">REACH OUT</div>
-    <h1 data-aos="fade-up">Let's <em>Connect</em></h1>
-    <div class="breadcrumb-nav" data-aos="fade-up" data-aos-delay="200">
-      
-    </div>
+    <div class="page-breadcrumb mb-3">
+    <h1 class="page-title">Let's Start a<br><em>Conversation</em></h1>
   </div>
 </section>
 
 <!-- Contact Section -->
 <section class="contact-section">
-  <div class="container">
-    <div class="contact-grid">
+  <div class="container-jr">
+    <div class="row g-5 align-items-stretch">
 
-      <!-- Contact Info -->
-      <div class="contact-info" data-aos="fade-right">
-        <div class="label-gold">GET IN TOUCH</div>
-        <h2>We'd Love to Hear <em style="font-style:italic;background:linear-gradient(135deg,#c9a84c,#f0d080);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;">From You</em></h2>
-        <p>Whether you're ready to start your project or simply want to explore ideas, our team is here to guide you every step of the way.</p>
+      <!-- Left: Info -->
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="contact-info-card">
+          <h2 class="contact-info-title">Get in Touch</h2>
+          <p class="contact-info-subtitle">Ready to transform your space? We'd love to hear about your project. Reach out through any of the channels below.</p>
 
-        <div class="contact-detail">
-          <div class="cd-icon"><i class="fas fa-map-marker-alt"></i></div>
-          <div class="cd-text">
-            <strong>Visit Our Studio</strong>
-            <span>14, Design District, Bandra West<br>Mumbai, Maharashtra 400050</span>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <div class="contact-item-label">Our Studio</div>
+              <div class="contact-item-value">Venkata Ramayya Nagar Gopal Nagar, 73-22-02B, Punta Rd, Valaki Nagar, Narayanapuram, Cyclone Colony, Rajamahendravaram, Andhra Pradesh 533103</div>
+            </div>
           </div>
-        </div>
 
-        <div class="contact-detail">
-          <div class="cd-icon"><i class="fas fa-phone-alt"></i></div>
-          <div class="cd-text">
-            <strong>Call Us</strong>
-            <span>+91 99999 99999<br>+91 88888 88888 (Dubai Office)</span>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <div class="contact-item-label">Call Us</div>
+              <div class="contact-item-value"><a href="tel:+919676133255" style="color:inherit">+91 96761 33255</a></div>
+            </div>
           </div>
-        </div>
 
-        <div class="contact-detail">
-          <div class="cd-icon"><i class="fas fa-envelope"></i></div>
-          <div class="cd-text">
-            <strong>Email Us</strong>
-            <span>hello@auruminteriors.com<br>projects@auruminteriors.com</span>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <div class="contact-item-label">Email Us</div>
+              <div class="contact-item-value"><a href="mailto:hello@jrinteriordesign.com" style="color:inherit">hello@jrinteriordesign.com</a></div>
+            </div>
           </div>
-        </div>
 
-        <div class="contact-detail">
-          <div class="cd-icon"><i class="fas fa-clock"></i></div>
-          <div class="cd-text">
-            <strong>Studio Hours</strong>
-            <span>Monday – Saturday: 9:00 AM – 7:00 PM<br>Sunday: By appointment only</span>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="bi bi-clock-fill"></i></div>
+            <div>
+              <div class="contact-item-label">Business Hours</div>
+              <div class="contact-item-value">Monday – Saturday: 10am – 5pm<br>Sunday: By Appointment Only</div>
+            </div>
           </div>
-        </div>
 
-        <div class="contact-socials">
-          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="https://wa.me/917670953307" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+           <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61591037533583" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/jrintdn?igsh=MWVpcGVtMDhrODlmOA==" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UC2FfBQZfA6tqbXn0-oKawMA" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
         </div>
       </div>
 
-      <!-- Contact Form -->
-      <div class="contact-form-wrapper" data-aos="fade-left">
-        <h3>Send Us a Message</h3>
-        <form id="contactForm" novalidate>
+      <!-- Right: Form -->
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="contact-form-card">
+          <div class="mb-4">
+            <span class="section-label">Send a Message</span>
+            <h2 class="section-title" style="font-size:1.8rem">Tell Us About Your <em>Project</em></h2>
+            <div class="divider-gold"></div>
+          </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName" placeholder="Rajiv" required>
+          <form id="contactForm" novalidate>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="form-group-jr">
+                  <label class="form-label-jr" for="fullName">Full Name *</label>
+                  <input type="text" id="fullName" name="fullName" class="form-control-jr" placeholder="Your full name" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group-jr">
+                  <label class="form-label-jr" for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" class="form-control-jr" placeholder="Your email address" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group-jr">
+                  <label class="form-label-jr" for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" class="form-control-jr" placeholder="Your phone number">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group-jr">
+                  <label class="form-label-jr" for="projectType">Project Type *</label>
+                  <select id="projectType" name="projectType" class="form-control-jr" required>
+                    <option value="" disabled selected>Select project type</option>
+                    <option value="residential">Residential Interior</option>
+                    <option value="commercial">Commercial Interior</option>
+                    <option value="villa">Villa / Bungalow</option>
+                    <option value="apartment">Apartment / Flat</option>
+                    <option value="office">Office Design</option>
+                    <option value="kitchen">Modular Kitchen</option>
+                    <option value="renovation">Renovation</option>
+                    <option value="turnkey">Turnkey Project</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group-jr">
+                  <label class="form-label-jr" for="budget">Approximate Budget</label>
+                  <select id="budget" name="budget" class="form-control-jr">
+                    <option value="" disabled selected>Select budget range</option>
+                    <option value="5-10L">₹5L – ₹10L</option>
+                    <option value="10-25L">₹10L – ₹25L</option>
+                    <option value="25-50L">₹25L – ₹50L</option>
+                    <option value="50L+">₹50L+</option>
+                    <option value="discuss">Prefer to Discuss</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group-jr">
+                  <label class="form-label-jr" for="message">Your Message *</label>
+                  <textarea id="message" name="message" class="form-control-jr" rows="5" placeholder="Tell us about your project, space, and what you're envisioning..." required></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-primary-jr w-100 justify-content-center" style="padding: 18px;">
+                  <i class="bi bi-send me-2"></i> Send Message
+                </button>
+                <p class="mt-3 text-center" style="font-size:0.82rem; color:var(--muted);">
+                  We typically respond within 24 hours. Your information is safe with us.
+                </p>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName" placeholder="Mehta" required>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="rajiv@example.com" required>
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+91 99999 99999">
-          </div>
-
-          <div class="form-group">
-            <label for="service">Service of Interest</label>
-            <select id="service" name="service">
-              <option value="" disabled selected>Select a service...</option>
-              <option>Interior Design</option>
-              <option>Luxury Painting</option>
-              <option>3D Visualization</option>
-              <option>Architecture</option>
-              <option>Lighting Design</option>
-              <option>Luxury Furnishing</option>
-              <option>Full Turnkey Project</option>
-              <option>Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="budget">Approximate Budget</label>
-            <select id="budget" name="budget">
-              <option value="" disabled selected>Select a range...</option>
-              <option>₹5L – ₹15L</option>
-              <option>₹15L – ₹50L</option>
-              <option>₹50L – ₹1 Crore</option>
-              <option>₹1 Crore+</option>
-              <option>Happy to Discuss</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Tell Us About Your Project</label>
-            <textarea id="message" name="message" placeholder="Describe your space, goals, timeline, and any inspiration you have in mind..."></textarea>
-          </div>
-
-          <button type="submit" class="btn-gold form-submit">Send Message <i class="fas fa-paper-plane" style="margin-left:8px"></i></button>
-
-          <div class="form-success" id="formSuccess">
-            <i class="fas fa-check-circle" style="font-size:1.5rem;display:block;margin-bottom:8px"></i>
-            Thank you! Your message has been sent. We'll be in touch within 24 hours.
-          </div>
-
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Map -->
+<!-- Map Section -->
 <section class="map-section">
-  <div class="container">
-    <div class="map-wrapper" data-aos="fade-up">
+  <div class="container-jr">
+    <div class="text-center mb-4" data-aos="fade-up">
+      <span class="section-label">Find Us</span>
+      <h2 class="section-title" style="font-size:2rem">Visit Our <em>Studio</em></h2>
+    </div>
+    <div class="map-wrap" data-aos="fade-up">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5484578046555!2d72.82657981490136!3d19.054945987089784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8f73f85e4c7%3A0x4bca9e83e80c3c4e!2sBandra%20West%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1623456789012!5m2!1sen!2sin"
-        width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade" title="Aurum Interiors Location">
+        src="https://maps.google.com/maps?q=JR+Interior+Design,+73-22-02B,+Punta+Rd,+Valaki+Nagar,+Narayanapuram,+Cyclone+Colony,+Rajamahendravaram,+Andhra+Pradesh+533103&t=&z=16&ie=UTF8&iwloc=&output=embed"
+        title="JR Interior Design Studio Location"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section style="padding:80px 0;background:var(--bg2)">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <div class="label-gold">QUESTIONS</div>
-      <h2 class="section-heading">Frequently <em>Asked</em></h2>
-    </div>
-    <div style="max-width:800px;margin:0 auto" data-aos="fade-up">
-      <div class="faq-item" style="border-bottom:1px solid var(--border);padding:24px 0">
-        <h4 style="color:#fff;font-family:var(--font-heading);font-size:1.15rem;margin-bottom:12px">How long does a typical interior design project take?</h4>
-        <p style="color:var(--muted);font-size:0.9rem">Project timelines vary by scope. A standard apartment typically takes 3–5 months, while larger villas or commercial projects can range from 6–18 months. We'll provide a detailed timeline during your initial consultation.</p>
+<!-- Contact CTA Strip -->
+<section style="background:var(--cream); padding:80px 0;">
+  <div class="container-jr">
+    <div class="row align-items-center g-4" data-aos="fade-up">
+      <div class="col-lg-7">
+        <span class="section-label">Need Help?</span>
+        <h2 class="section-title" style="font-size:2.2rem; margin-bottom:12px;">Need Interior Design<br><em>Consultation?</em></h2>
+        <p class="section-subtitle">Let's talk today. Our design experts are ready to guide you through the process.</p>
       </div>
-      <div class="faq-item" style="border-bottom:1px solid var(--border);padding:24px 0">
-        <h4 style="color:#fff;font-family:var(--font-heading);font-size:1.15rem;margin-bottom:12px">Do you take on projects outside of Mumbai?</h4>
-        <p style="color:var(--muted);font-size:0.9rem">Absolutely. We have completed projects across India — Delhi, Bangalore, Hyderabad, Pune, Goa — and internationally in Dubai and London. We manage remote projects with regular site visits and a trusted network of local contractors.</p>
-      </div>
-      <div class="faq-item" style="border-bottom:1px solid var(--border);padding:24px 0">
-        <h4 style="color:#fff;font-family:var(--font-heading);font-size:1.15rem;margin-bottom:12px">Can I see a 3D visualization before committing to a design?</h4>
-        <p style="color:var(--muted);font-size:0.9rem">Yes. Our Signature and Prestige packages include photorealistic 3D renders and virtual walkthroughs. We want you to feel completely confident in your design before any construction begins.</p>
-      </div>
-      <div class="faq-item" style="padding:24px 0">
-        <h4 style="color:#fff;font-family:var(--font-heading);font-size:1.15rem;margin-bottom:12px">Is the initial consultation free?</h4>
-        <p style="color:var(--muted);font-size:0.9rem">Yes. We offer a complimentary 30-minute consultation — in-studio, at your site, or via video call — to understand your project and explore how we can help. No obligation, no pressure.</p>
+      <div class="col-lg-5 d-flex flex-wrap gap-3 justify-content-lg-end">
+        <a href="https://wa.me/919676133255" target="_blank" rel="noopener noreferrer" class="btn-primary-jr" style="background:#25D366;">
+          <i class="bi bi-whatsapp"></i> WhatsApp Us
+        </a>
+        <a href="tel:+917670953307" class="btn-dark-jr">
+          <i class="bi bi-telephone"></i> Call Now
+        </a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="site-footer">
-  <div class="footer-top"><div class="container"><div class="footer-grid">
-    <div class="footer-brand">
-      <a href="index.html" class="nav-logo">
-        <img src="logo.png" alt="JRIND Logo" class="footer-logo-img">
-        <span class="nav-brand-name">JR Interior Design</span>
-      </a>
-      <p>Crafting luxury living spaces that redefine elegance.</p>
-      <div class="footer-social">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://wa.me/919999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<footer class="footer">
+  <div class="container-jr">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <a href="index.html" class="footer-logo-wrap">
+          <img src="assets/images/logo.png" alt="JRIND" class="footer-logo-img">
+          <div class="footer-brand-name">JR Interior Design</div>
+        </a>
+        <p class="footer-desc">Designing spaces that embrace warmth, texture, and personality. Your vision, our expertise.</p>
+         <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61591037533583" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/jrintdn?igsh=MWVpcGVtMDhrODlmOA==" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UC2FfBQZfA6tqbXn0-oKawMA" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <h5 class="footer-heading">Quick Links</h5>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <h5 class="footer-heading">Services</h5>
+        <div class="footer-links">
+          <a href="services.html">Residential Design</a>
+          <a href="services.html">Commercial Design</a>
+          <a href="services.html">Space Planning</a>
+          <a href="services.html">Custom Furniture</a>
+          <a href="services.html">Modular Kitchen</a>
+          <a href="services.html">Turnkey Projects</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <h5 class="footer-heading">Get in Touch</h5>
+        <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i> <span>Venkata Ramayya Nagar Gopal Nagar, 73-22-02B, Punta Rd, Valaki Nagar, Narayanapuram, Cyclone Colony, Rajamahendravaram, Andhra Pradesh 533103</span></div>
+        <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+91 96761 33255</span></div>
+        
+        <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Mon – Sat: 10am – 5pm</span></div>
       </div>
     </div>
-    <div class="footer-col"><h5>Quick Links</h5><ul>
-      <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li>
-      <li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li>
-    </ul></div>
-    <div class="footer-col"><h5>Services</h5><ul>
-      <li><a href="services.html">Interior Design</a></li><li><a href="services.html">Luxury Painting</a></li>
-      <li><a href="services.html">3D Visualization</a></li><li><a href="services.html">Architecture</a></li>
-    </ul></div>
-    <div class="footer-col"><h5>Contact</h5><ul class="footer-contact">
-      <li><i class="fas fa-map-marker-alt"></i>14, Design District, Bandra West, Mumbai 400050</li>
-      <li><i class="fas fa-phone"></i>+91 99999 99999</li>
-      <li><i class="fas fa-envelope"></i>hello@auruminteriors.com</li>
-      <li><i class="fas fa-clock"></i>Mon–Sat: 9am – 10pm</li>
-    </ul></div>
-  </div></div></div>
-  <div class="footer-bottom"><div class="container"><p>© 2026 Aurum Interiors. All Rights Reserved. Crafted with <i class="fas fa-heart" style="color:#c9a84c"></i> in Mumbai.</p></div></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container-jr d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <div class="footer-bottom-text">© 2025 JR Interior Design. All Rights Reserved.</div>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </div>
 </footer>
 
+<!-- Floating WhatsApp -->
+<div class="floating-whatsapp-wrap">
+  <div class="floating-wa-pulse"></div>
+  <a href="https://wa.me/919676133255" class="floating-wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i><span>Chat With Us</span>
+  </a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="main.js"></script>
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/917670953307" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.9/dist/lenis.min.js"></script>
+<script>gsap.registerPlugin(ScrollTrigger);</script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
