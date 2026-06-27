@@ -1,9 +1,9 @@
 /* ============================================================
-   JR INTERIOR DESIGN — Premium Style Sheet
+   JR INTERIOR DESIGN â€” Premium Style Sheet
    Version: 2.0 | Warm Modern Luxury
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;500;600;700&display=swap');
 
 /* ============================================================
    CSS VARIABLES
@@ -25,6 +25,7 @@
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-serif:   'Cormorant Garamond', Georgia, serif;
   --font-body:    'Inter', sans-serif;
+  --font-nav:     'Cinzel', 'Playfair Display', Georgia, serif;
 
   --shadow-sm:  0 2px 12px rgba(44, 24, 16, 0.08);
   --shadow-md:  0 8px 32px rgba(44, 24, 16, 0.12);
@@ -216,13 +217,14 @@ ul { list-style: none; }
 }
 
 .nav-brand-text {
-  font-family: var(--font-heading);
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-family: var(--font-nav);
+  font-size: 1.1rem;
+  font-weight: 600;
   color: var(--white);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.08em;
   line-height: 1.2;
   transition: var(--transition);
+  text-transform: uppercase;
 }
 
 .navbar-jrind.scrolled .nav-brand-text {
@@ -1867,52 +1869,8 @@ ul { list-style: none; }
 [data-aos] { pointer-events: none; }
 [data-aos].aos-animate { pointer-events: auto; }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
-@media (max-width: 1024px) {
-  .masonry-grid { columns: 2; }
-  .timeline::before { display: none; }
-  .tl-item, .tl-item:nth-child(even) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .container-jr { padding: 0 28px; }
-}
 
-@media (max-width: 768px) {
-  .nav-menu { display: none; }
-  .hamburger { display: flex; }
-  .navbar-jrind .nav-inner { padding: 0 20px; }
 
-  .hero-title { font-size: clamp(2.5rem, 8vw, 3.5rem); }
-  .hero-content { padding: 0 20px; padding-top: 80px; }
-  .hero-actions { flex-direction: column; gap: 14px; }
-  .hero-actions .btn-primary-jr, .hero-actions .btn-outline-jr { width: 100%; justify-content: center; }
-
-  .stat-item + .stat-item::before { display: none; }
-  .stat-item { border-bottom: 1px solid rgba(200, 155, 109, 0.15); }
-  .stat-item:last-child { border-bottom: none; }
-
-  .contact-info-card, .contact-form-card { padding: 36px 28px; }
-  .container-jr { padding: 0 20px; }
-  .page-hero-content { padding: 0 20px; padding-top: 80px; }
-  .masonry-grid { columns: 1; }
-
-  .floating-wa-btn span { display: none; }
-  .floating-wa-btn { padding: 16px; border-radius: 50%; }
-  .floating-whatsapp-wrap { bottom: 20px; right: 20px; }
-
-  .footer-bottom { flex-direction: column; text-align: center; }
-}
-
-@media (max-width: 480px) {
-  .section-title { font-size: 1.9rem; }
-  .feature-card, .service-card, .value-card { padding: 36px 24px; }
-  .testimonial-card { padding: 40px 28px; }
-  .project-body { padding: 28px 24px; }
-  .cta-title { font-size: 2rem; }
-}
 
 /* ============================================================
    DARK TIMELINE FOR ABOUT PAGE
@@ -2012,27 +1970,397 @@ ul { list-style: none; }
   margin-bottom: 0;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .timeline-dark::before {
-    left: 20px;
+/* ============================================================
+   BRAND NAME FONT FIX
+   ============================================================ */
+.nav-brand-text {
+  font-family: var(--font-nav) !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.footer-brand-name {
+  font-family: var(--font-heading) !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.preloader-text {
+  font-family: var(--font-heading) !important;
+  font-size: 1.1rem;
+  color: var(--gold);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+/* Fix iOS background-attachment:fixed performance issue */
+@media (max-width: 1024px) {
+  .cta-bg {
+    background-attachment: scroll;
   }
-  .tl-row-dark, .tl-row-dark:nth-child(even) {
+}
+
+/* ============================================================
+   RESPONSIVE â€” TABLET (max 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+
+  /* Prevent any horizontal overflow globally */
+  html, body { overflow-x: hidden; }
+  section { overflow-x: hidden; }
+
+  /* Fix iOS background-attachment:fixed blank page bug */
+  .cta-bg { background-attachment: scroll; }
+
+  .masonry-grid { columns: 2; column-gap: 16px; }
+
+  .timeline::before { display: none; }
+  .tl-item, .tl-item:nth-child(even) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-jr { padding: 0 28px; }
+
+  .story-image-wrap img { height: 420px; }
+  .project-full-img { height: 280px; }
+}
+
+/* ============================================================
+   RESPONSIVE â€” MOBILE (max 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* â”€â”€ GLOBAL â”€â”€ */
+  html, body { overflow-x: hidden; }
+  section { overflow-x: hidden; }
+
+  /* Container: keep padding > Bootstrap row negative margin (12px) */
+  .container-jr { padding: 0 20px; }
+
+  /* Neutralise Bootstrap row bleed inside container-jr on mobile */
+  .container-jr > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container-jr > .row > [class*="col"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Typography */
+  .section-label { font-size: 0.68rem; }
+  .section-title { font-size: clamp(1.6rem, 6vw, 2.2rem) !important; }
+  .section-subtitle { font-size: 0.92rem; max-width: 100%; }
+
+  /* â”€â”€ NAVBAR â”€â”€ */
+  .nav-menu { display: none; }
+  .hamburger { display: flex; }
+  .navbar-jrind .nav-inner { padding: 0 16px; }
+  .navbar-jrind { padding: 14px 0; }
+  .nav-logo-img { width: 42px; height: 42px; }
+  .nav-brand-text { font-size: 0.92rem !important; }
+  .nav-tagline { font-size: 0.56rem; display: block; letter-spacing: 0.08em; }
+
+  /* â”€â”€ HERO (index page) â”€â”€ */
+  .hero-section { height: 100svh; min-height: 580px; }
+  .hero-content {
+    padding: 0 20px !important;
+    padding-top: 100px !important;
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero-title { font-size: clamp(2rem, 9vw, 2.8rem) !important; margin-bottom: 16px; }
+  .hero-subtitle { font-size: 0.9rem; margin-bottom: 28px; max-width: 100%; }
+  .hero-actions { flex-direction: column; gap: 12px; align-items: stretch; }
+  .hero-actions .btn-primary-jr,
+  .hero-actions .btn-outline-jr {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+  }
+  .hero-scroll { display: none; }
+
+  /* â”€â”€ PAGE HERO (inner pages banner) â”€â”€ */
+  .page-hero { height: 42vh; min-height: 260px; }
+  .page-hero-content {
+    padding: 0 20px !important;
+    padding-top: 85px !important;
+    width: 100%;
+    max-width: 100%;
+  }
+  .page-title { font-size: clamp(1.8rem, 7vw, 2.6rem) !important; }
+
+  /* â”€â”€ FEATURES SECTION (Home) â”€â”€ */
+  .features-section { padding: 56px 0; }
+  .feature-card { padding: 30px 22px; }
+  .feature-icon { width: 58px; height: 58px; font-size: 22px; margin-bottom: 18px; }
+  .feature-title { font-size: 1.1rem; }
+  .feature-desc { font-size: 0.88rem; }
+
+  /* â”€â”€ PROJECT CARDS PREVIEW (Home) â”€â”€ */
+  .projects-preview { padding: 56px 0; }
+  .project-card { aspect-ratio: 4/3; }
+  .project-card-overlay { padding: 18px; }
+  .project-card-title { font-size: 1.1rem; }
+
+  /* â”€â”€ STATS SECTION (Home) â”€â”€ */
+  .stats-section { padding: 56px 0; }
+  .stat-item + .stat-item::before { display: none; }
+  .stat-item {
+    border-bottom: 1px solid rgba(200, 155, 109, 0.15);
+    padding: 24px 12px;
+  }
+  .stat-item:last-child { border-bottom: none; }
+  .stat-number { font-size: clamp(2.4rem, 8vw, 3.2rem); }
+  .stat-label { font-size: 0.8rem; }
+
+  /* â”€â”€ TESTIMONIALS (Home) â”€â”€ */
+  .testimonials-section { padding: 56px 0; }
+  .testimonial-card { padding: 32px 20px; }
+  .testimonial-text { font-size: 0.98rem; }
+
+  /* â”€â”€ CTA SECTION (Home) â”€â”€ */
+  .cta-section { padding: 68px 0; }
+  .cta-content { padding: 0 4px; }
+  .cta-title { font-size: clamp(1.7rem, 7vw, 2.2rem) !important; }
+  .cta-subtitle { font-size: 0.9rem; margin-bottom: 32px; }
+
+  /* â”€â”€ ABOUT PAGE â€” STORY â”€â”€ */
+  .story-section { padding: 56px 0; }
+  .story-image-wrap img { height: 260px; }
+  .story-badge { width: 88px; height: 88px; right: -6px; bottom: -8px; }
+  .story-badge-num { font-size: 1.5rem; }
+  .story-badge-text { font-size: 0.58rem; }
+
+  /* â”€â”€ ABOUT PAGE â€” VALUES â”€â”€ */
+  .values-section { padding: 56px 0; }
+  .value-card { padding: 32px 20px; }
+  .value-title { font-size: 1.1rem; }
+
+  /* â”€â”€ ABOUT PAGE â€” DARK PROCESS TIMELINE â”€â”€ */
+  .process-section-dark { padding: 56px 0; }
+  .timeline-dark { padding: 0 4px; }
+  .timeline-dark::before { left: 18px; }
+  .tl-row-dark,
+  .tl-row-dark:nth-child(even) {
     flex-direction: column !important;
     align-items: flex-start;
-    margin-bottom: 50px;
+    margin-bottom: 36px;
+    padding-left: 48px;
   }
-  .tl-half, .tl-row-dark:nth-child(even) .tl-half {
-    width: 100%;
+  .tl-half,
+  .tl-row-dark:nth-child(even) .tl-half {
+    width: 100% !important;
     text-align: left !important;
-    padding-left: 60px !important;
+    padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .tl-date-half, .tl-row-dark:nth-child(even) .tl-date-half {
-    margin-bottom: 10px;
+  .tl-date-half,
+  .tl-row-dark:nth-child(even) .tl-date-half {
+    margin-bottom: 4px;
+    text-align: left !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
-  .tl-col-dot {
-    left: 20px;
-    top: 22px;
+  .tl-content-half,
+  .tl-row-dark:nth-child(even) .tl-content-half {
+    text-align: left !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
+  .tl-col-dot { left: 18px; top: 18px; transform: translate(-50%, 0); }
+  .tl-num-gold { font-size: 1.4rem; }
+  .tl-title-white { font-size: 1.05rem; }
+  .tl-desc-gray { font-size: 0.88rem; }
+
+  /* â”€â”€ SERVICES PAGE â”€â”€ */
+  .services-section { padding: 56px 0; }
+  .service-card { padding: 30px 22px; }
+  .service-title { font-size: 1.1rem; }
+  .service-desc { font-size: 0.88rem; }
+
+  /* â”€â”€ GALLERY PAGE â”€â”€ */
+  .gallery-section { padding: 56px 0 72px; }
+  .gallery-filters {
+    gap: 8px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .filter-btn { padding: 8px 16px; font-size: 0.76rem; }
+  .masonry-grid { columns: 1; column-gap: 0; }
+  .masonry-item { margin-bottom: 12px; }
+
+  /* â”€â”€ PROJECTS PAGE â”€â”€ */
+  .projects-section { padding: 56px 0 72px; }
+  .project-full-img { height: 210px; }
+  .project-meta { padding: 16px 18px; gap: 12px; }
+  .project-body { padding: 22px 18px; }
+  .project-heading { font-size: 1.25rem; }
+  .project-desc { font-size: 0.88rem; }
+
+  /* â”€â”€ CONTACT PAGE â”€â”€ */
+  .contact-section { padding: 56px 0; }
+  .contact-info-card { padding: 30px 22px; border-radius: var(--radius); }
+  .contact-form-card { padding: 30px 22px; border-radius: var(--radius); }
+  .contact-info-title { font-size: 1.5rem; }
+  .contact-info-subtitle { font-size: 0.88rem; }
+  .form-control-jr { padding: 12px 14px; font-size: 0.88rem; }
+
+  /* â”€â”€ MAP â”€â”€ */
+  .map-section { padding: 0 0 56px; }
+  .map-wrap iframe { height: 280px; }
+
+  /* â”€â”€ FOOTER â”€â”€ */
+  .footer { padding: 56px 0 0; }
+  .footer-desc { max-width: 100%; font-size: 0.85rem; }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    padding: 18px 0;
+    margin-top: 40px;
+  }
+  .footer-bottom-links { justify-content: center; gap: 14px; }
+  .footer-logo-img { width: 42px; height: 42px; }
+
+  /* â”€â”€ FLOATING WHATSAPP â”€â”€ */
+  .floating-wa-btn span { display: none; }
+  .floating-wa-btn { padding: 14px; border-radius: 50%; }
+  .floating-whatsapp-wrap { bottom: 18px; right: 16px; }
+
+  /* â”€â”€ BUTTONS â”€â”€ */
+  .btn-primary-jr { padding: 13px 28px; font-size: 0.84rem; }
+  .btn-dark-jr { padding: 13px 28px; font-size: 0.84rem; }
+  .btn-outline-jr { padding: 12px 26px; font-size: 0.84rem; }
+}
+
+/* ============================================================
+   RESPONSIVE â€” SMALL MOBILE (max 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+
+  .container-jr { padding: 0 16px; }
+
+  /* Fix Bootstrap row bleed inside container-jr */
+  .container-jr > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container-jr > .row > [class*="col"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Typography */
+  .section-title { font-size: clamp(1.45rem, 6vw, 1.9rem) !important; }
+
+  /* Sections â€” reduce vertical padding */
+  .features-section,
+  .projects-preview,
+  .stats-section,
+  .testimonials-section,
+  .story-section,
+  .values-section,
+  .services-section,
+  .gallery-section,
+  .projects-section,
+  .contact-section { padding: 44px 0; }
+
+  /* Hero */
+  .hero-content { padding: 0 16px !important; padding-top: 88px !important; }
+  .hero-title { font-size: clamp(1.85rem, 9vw, 2.4rem) !important; }
+  .hero-subtitle { font-size: 0.86rem; }
+
+  /* Page hero */
+  .page-hero-content { padding: 0 16px !important; padding-top: 80px !important; }
+  .page-title { font-size: clamp(1.7rem, 7vw, 2.2rem) !important; }
+
+  /* Nav */
+  .nav-brand-text { font-size: 0.85rem !important; }
+  .nav-tagline { font-size: 0.52rem; display: block; letter-spacing: 0.07em; }
+  .nav-logo-img { width: 38px; height: 38px; }
+
+  /* Cards */
+  .feature-card,
+  .service-card,
+  .value-card { padding: 26px 18px; }
+  .testimonial-card { padding: 28px 18px; }
+  .testimonial-text { font-size: 0.92rem; }
+
+  /* Contact */
+  .contact-info-card,
+  .contact-form-card { padding: 26px 16px; }
+
+  /* Projects */
+  .project-full-img { height: 190px; }
+  .project-body { padding: 18px 14px; }
+  .project-heading { font-size: 1.1rem; }
+  .project-meta { padding: 14px 14px; }
+
+  /* Map */
+  .map-wrap iframe { height: 240px; }
+
+  /* CTA */
+  .cta-section { padding: 52px 0; }
+  .cta-title { font-size: clamp(1.55rem, 7vw, 2rem) !important; }
+
+  /* Story */
+  .story-image-wrap img { height: 220px; }
+  .story-badge { width: 74px; height: 74px; right: -4px; bottom: -6px; }
+  .story-badge-num { font-size: 1.2rem; }
+
+  /* Gallery */
+  .filter-btn { padding: 7px 12px; font-size: 0.72rem; }
+
+  /* Timeline dark */
+  .tl-row-dark,
+  .tl-row-dark:nth-child(even) { padding-left: 42px; }
+
+  /* Footer */
+  .footer { padding: 44px 0 0; }
+  .footer-brand-name { font-size: 0.98rem; }
+  .footer-heading { font-size: 0.92rem; }
+  .footer-links a { font-size: 0.82rem; }
+  .footer-contact-item { font-size: 0.82rem; }
+}
+
+/* ============================================================
+   RESPONSIVE â€” EXTRA SMALL (max 360px)
+   ============================================================ */
+@media (max-width: 360px) {
+
+  .container-jr { padding: 0 12px; }
+
+  .container-jr > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container-jr > .row > [class*="col"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-title { font-size: 1.75rem !important; }
+  .page-title { font-size: 1.6rem !important; }
+  .section-title { font-size: 1.4rem !important; }
+  .nav-brand-text { font-size: 0.78rem !important; }
+  .nav-logo-img { width: 34px; height: 34px; }
+  .nav-tagline { font-size: 0.48rem; display: block; letter-spacing: 0.06em; }
+
+  .btn-primary-jr,
+  .btn-dark-jr,
+  .btn-outline-jr { padding: 12px 18px; font-size: 0.8rem; }
+
+  .contact-info-card,
+  .contact-form-card { padding: 22px 14px; }
+
+  .feature-card,
+  .service-card,
+  .value-card { padding: 22px 14px; }
 }
